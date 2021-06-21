@@ -1,6 +1,6 @@
-import express from "express"
+import express from "express";
 
-const app = express()
+const app = express();
 
 /*
  * GET    => Buscar uma informação
@@ -11,11 +11,11 @@ const app = express()
  */
 
 app.get("/test", (req, res) => {
-    return res.send("Olá nlw")
-})
+  return res.send("Olá nlw");
+});
 
 app.post("/test-post", (req, res) => {
-    return res.send("Olá nlw: método POST")
-})
+  return res.send("Olá nlw: método POST");
+});
 
-app.listen(3000, () => console.log("server is running"))
+app.listen(3000, () => console.log("server is running"));
