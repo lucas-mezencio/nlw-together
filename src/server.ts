@@ -11,7 +11,11 @@ const app = express()
  */
 
 app.get("/test", (req, res) => {
-    res.send("Olá nlw")
+    return res.send("Olá nlw")
+})
+
+app.post("/test-post", (req, res) => {
+    return res.send("Olá nlw: método POST")
 })
 
 app.listen(3000, () => console.log("server is running"))
