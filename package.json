@@ -20,5 +20,7 @@
   },
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "repository": "https://github.com/lucas-mezencio/nlw-together.git",
+  "author": "Lucas Mezencio <lucasmezencio@outlook.com>"
 }
