@@ -2,6 +2,7 @@ import { Request, Response } from "express";
 import { CreateUserService } from "../services/CreateUserService";
 
 class CreateUserController {
+  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   async handle(request: Request, response: Response) {
     const { name, email, admin } = request.body;
 
