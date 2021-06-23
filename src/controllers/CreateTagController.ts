@@ -2,6 +2,7 @@ import { Request, response, Response } from "express";
 import { CreateTagService } from "../services/createTagService";
 
 class CreateTagController {
+  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   async handle(req: Request, res: Response) {
     const createTagService = new CreateTagService();
 
@@ -9,7 +10,7 @@ class CreateTagController {
 
     const tag = await createTagService.execute(name);
 
-    return response.json(tag);
+    return res.json(tag);
   }
 }
 
