@@ -10,6 +10,17 @@ const app = express();
  * PATCH  => Alterar uma informação específica
  */
 
+/**
+ * Tipos de parâmetros:
+ *
+ * Routes params => "Parametro dividido por barra (busca através do recurso: /prod/{id}) "
+ * Query params => "busca iniciada após por '?': /prod?name=teclado&..."
+ * Body params => "usados nos metodos POST, PUT, PATCH" {
+ *  "name": "teclado"
+ *  "description": "digita as coisas..."
+ * }
+ */
+
 app.get("/test", (req, res) => {
   return res.send("Olá nlw");
 });
