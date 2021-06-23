@@ -7,6 +7,7 @@ interface IUserRequest {
 }
 
 class CreateUserService {
+  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   async execute({ name, email, admin }: IUserRequest) {
     const usersRepository = new UsersRepositories();
 
